@@ -1,7 +1,7 @@
 name: tune_earn_v27
-description: TUNE EARN V27 ULTIMATE - LEGIT EARNING WITH ADS & FIREBASE AUTO SCALE
+description: TUNE EARN V27.2 ULTIMATE - WORLD FEED VIRAL + LIVE + DM + GIFTS
 publish_to: 'none'
-version: 27.1.0+28
+version: 27.2.0+29
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
@@ -17,6 +17,8 @@ dependencies:
   shared_preferences: ^2.2.2
   http: ^1.1.0
   crypto: ^3.0.3
+  cached_network_image: ^3.2.3
+  intl: ^0.19.0
 
 dev_dependencies:
   flutter_test:
