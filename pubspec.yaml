@@ -1,0 +1,14 @@
+name: tune_earn_v27
+description: Tune Earn V27 Ultimate V9-V27 Legal Bicol
+publish_to: 'none'
+version: 27.0.0+27
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.5
+  device_info_plus: ^9.1.0
+  crypto: ^3.0.3
+flutter:
+  uses-material-design: true
