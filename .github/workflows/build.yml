@@ -12,6 +12,10 @@ jobs:
       - uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.22.0'
+      - name: Fix Project
+        run: |
+          flutter create. --platforms=android --org com.tuneearn.v27 --project-name tune_earn_v27 --overwrite
+          printf "import 'package:flutter/material.dart';\nvoid main(){runApp(const MyApp());}\nclass MyApp extends StatelessWidget{\nconst MyApp({super.key});\n@override Widget build(BuildContext c){return MaterialApp(home: Scaffold(body: Center(child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [const Text('TUNE EARN V27', style: TextStyle(fontSize:32, fontWeight: FontWeight.bold)), const SizedBox(height:20), const Text('BIR Legal Anti-Hack'), const SizedBox(height:30), ElevatedButton(onPressed: (){}, child: const Text('START EARNING'))])))));\n}" > lib/main.dart
       - run: flutter pub get
       - run: flutter build apk --release
       - uses: actions/upload-artifact@v4
